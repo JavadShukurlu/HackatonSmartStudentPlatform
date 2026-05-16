@@ -1,0 +1,149 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "SmartStudentPlatform.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "SmartStudentPlatform.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SmartStudentPlatform.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SmartStudentPlatform.Application.dll": {}
+        }
+      },
+      "SmartStudentPlatform.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/SmartStudentPlatform.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SmartStudentPlatform.Domain.dll": {}
+        }
+      },
+      "SmartStudentPlatform.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "SmartStudentPlatform.Application": "1.0.0",
+          "SmartStudentPlatform.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SmartStudentPlatform.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SmartStudentPlatform.Infrastructure.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SmartStudentPlatform.Application/1.0.0": {
+      "type": "project",
+      "path": "../SmartStudentPlatform.Application/SmartStudentPlatform.Application.csproj",
+      "msbuildProject": "../SmartStudentPlatform.Application/SmartStudentPlatform.Application.csproj"
+    },
+    "SmartStudentPlatform.Domain/1.0.0": {
+      "type": "project",
+      "path": "../SmartStudentPlatform.Domain/SmartStudentPlatform.Domain.csproj",
+      "msbuildProject": "../SmartStudentPlatform.Domain/SmartStudentPlatform.Domain.csproj"
+    },
+    "SmartStudentPlatform.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../SmartStudentPlatform.Infrastructure/SmartStudentPlatform.Infrastructure.csproj",
+      "msbuildProject": "../SmartStudentPlatform.Infrastructure/SmartStudentPlatform.Infrastructure.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "SmartStudentPlatform.Application >= 1.0.0",
+      "SmartStudentPlatform.Infrastructure >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\cavad\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\cavad\\Desktop\\SmartStudentPlatform\\SmartStudentPlatform\\SmartStudentPlatform.csproj",
+      "projectName": "SmartStudentPlatform",
+      "projectPath": "C:\\Users\\cavad\\Desktop\\SmartStudentPlatform\\SmartStudentPlatform\\SmartStudentPlatform.csproj",
+      "packagesPath": "C:\\Users\\cavad\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\cavad\\Desktop\\SmartStudentPlatform\\SmartStudentPlatform\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\cavad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "framework": "net8.0",
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "C:\\Users\\cavad\\Desktop\\SmartStudentPlatform\\SmartStudentPlatform.Application\\SmartStudentPlatform.Application.csproj": {
+              "projectPath": "C:\\Users\\cavad\\Desktop\\SmartStudentPlatform\\SmartStudentPlatform.Application\\SmartStudentPlatform.Application.csproj"
+            },
+            "C:\\Users\\cavad\\Desktop\\SmartStudentPlatform\\SmartStudentPlatform.Infrastructure\\SmartStudentPlatform.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\cavad\\Desktop\\SmartStudentPlatform\\SmartStudentPlatform.Infrastructure\\SmartStudentPlatform.Infrastructure.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "10.0.200"
+    },
+    "frameworks": {
+      "net8.0": {
+        "framework": "net8.0",
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

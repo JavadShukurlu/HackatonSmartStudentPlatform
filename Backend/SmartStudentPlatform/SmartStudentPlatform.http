@@ -1,0 +1,6 @@
+@SmartStudentPlatform_HostAddress = http://localhost:5003
+
+GET {{SmartStudentPlatform_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

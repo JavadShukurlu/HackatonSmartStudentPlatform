@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="SmartStudentPlatform.Application/SmartStudentPlatform.Application.csproj" />
+  <Project Path="SmartStudentPlatform.Domain/SmartStudentPlatform.Domain.csproj" />
+  <Project Path="SmartStudentPlatform.Infrastructure/SmartStudentPlatform.Infrastructure.csproj" />
+  <Project Path="SmartStudentPlatform/SmartStudentPlatform.csproj" />
+</Solution>

@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="Hubs\" />
+    <Folder Include="Middleware\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SmartStudentPlatform.Application\SmartStudentPlatform.Application.csproj" />
+    <ProjectReference Include="..\SmartStudentPlatform.Infrastructure\SmartStudentPlatform.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
