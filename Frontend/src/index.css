@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body, #root { height: 100%; }
+  body {
+    @apply font-sans antialiased text-slate-800 dark:text-slate-100;
+    background-color: #a899e6;
+  }
+  .dark body { background-color: #0d0a18; }
+  *::-webkit-scrollbar { width: 10px; height: 10px; }
+  *::-webkit-scrollbar-thumb { @apply bg-slate-300 dark:bg-slate-700 rounded-full; }
+  *::-webkit-scrollbar-track { background: transparent; }
+}
+
+@layer components {
+  .card {
+    @apply rounded-2xl bg-white dark:bg-slate-900/80 border border-slate-200/70 dark:border-slate-800 shadow-soft;
+  }
+  .input-base {
+    @apply w-full rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900
+           px-4 py-2.5 text-sm text-slate-800 dark:text-slate-100 placeholder:text-slate-400
+           focus:outline-none focus:ring-2 focus:ring-brand-500/40 focus:border-brand-500 transition;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-medium
+           transition active:scale-[0.98] disabled:opacity-60 disabled:pointer-events-none;
+  }
+  .btn-primary { @apply btn bg-brand-600 hover:bg-brand-700 text-white shadow-glow; }
+  .btn-ghost   { @apply btn bg-transparent hover:bg-brand-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200; }
+  .btn-outline { @apply btn border border-brand-200 dark:border-slate-700 hover:bg-brand-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200; }
+  .btn-danger  { @apply btn bg-rose-600 hover:bg-rose-700 text-white; }
+
+  .badge {
+    @apply inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 text-xs font-medium;
+  }
+
+  .table-wrap {
+    @apply overflow-x-auto rounded-2xl border border-slate-200/70 dark:border-slate-800 bg-white dark:bg-slate-900;
+  }
+  .table-base {
+    @apply w-full text-sm;
+  }
+  .table-base thead th {
+    @apply text-left text-xs uppercase tracking-wider text-slate-500 dark:text-slate-400 font-semibold px-4 py-3 bg-slate-50 dark:bg-slate-900/60;
+  }
+  .table-base tbody td {
+    @apply px-4 py-3 border-t border-slate-100 dark:border-slate-800 text-slate-700 dark:text-slate-200;
+  }
+  .table-base tbody tr {
+    @apply hover:bg-slate-50/60 dark:hover:bg-slate-800/40 transition;
+  }
+
+  .skeleton {
+    @apply rounded-md bg-gradient-to-r from-slate-200 via-slate-100 to-slate-200 dark:from-slate-800 dark:via-slate-700 dark:to-slate-800;
+    background-size: 800px 100%;
+    animation: shimmer 1.6s linear infinite;
+  }
+}
+
+/* ScorePicker — custom range slider thumb (brand colored, glow on focus) */
+.score-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 9999px;
+  background: #fff;
+  border: 3px solid #14b8a6;
+  box-shadow: 0 4px 14px -2px rgba(20, 184, 166, 0.55);
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
+}
+.score-range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 9999px;
+  background: #fff;
+  border: 3px solid #14b8a6;
+  box-shadow: 0 4px 14px -2px rgba(20, 184, 166, 0.55);
+  cursor: pointer;
+}
+.score-range:hover::-webkit-slider-thumb,
+.score-range:focus::-webkit-slider-thumb { transform: scale(1.1); }
+.score-range::-webkit-slider-runnable-track,
+.score-range::-moz-range-track { background: transparent; height: 8px; }
+.score-range:focus { outline: none; }
+
